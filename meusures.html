@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="./meusures.php" method="POST" onsubmit="return test()">
+        <fieldset>
+            <legend>Ajout des meusures</legend>
+            <label for="station">station :</label>
+            <select name="station" id="station">
+                <option value="0" disabled selected>choisir une station</option>
+                <option value="60715">Carthage</option>
+                <option value="60731">Enfidha-aeroport</option>
+                <option value="60780">El-Borma</option>
+            </select>
+            <label for="saison">saison :</label>
+            <select name="saison" id="saison">
+                <option value="0" disabled selected>choisir une saison</option>
+                <option value="Hiver">Hiver</option>
+                <option value="Printemps">Printemps</option>
+                <option value="Ete">Ete</option>
+                <option value="Automne">Automne</option>
+            </select><br>
+            <label for="annee">Annee :</label>
+            <input type="radio" name="annee" id="annee" value="2018">2018<input type="radio" name="annee" id="annee" value="2019">2019 <br>
+            <label for="temp">Temperature :</label>
+            <input type="text" name="temp" id="temp">(°C)
+            <label for="P">pluie</label>
+            <input type="text" name="P" id="P">(mm) <br>
+            <input type="reset" value="Annuler">
+            <input type="submit" value="Ajouter">
+        </fieldset>
+    </form>
+    <script src="./script.js"></script>
+</body>
+</html>
